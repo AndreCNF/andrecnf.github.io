@@ -20,7 +20,7 @@ cover: assets/images/christopher-gower-291246-unsplash.jpg
 show_edit_on_github: false
 ---
 
-Software to work smoothly on a deep learning project.
+Software to work smoothly on your neural networks.
 
 <!--more-->
 
