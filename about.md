@@ -15,8 +15,6 @@ titles:
   zh-HK   : *ZH_HANT
   ko      : &KO       소개
   ko-KR   : *KO
-key: page-about
-comment: false
 ---
 
 ![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
