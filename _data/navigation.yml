@@ -1,4 +1,7 @@
 header:
+  - title:      Articles
+    url:        /articles.html
+
   - titles:
       en      : &EN       Archive
       en-GB   : *EN

@@ -39,7 +39,7 @@ author:
   name      : André Ferreira
   url       :
   avatar    : assets/images/CVphoto.png # path or url of avatar image (square)
-  bio       : I am an amazing person.
+  bio       : Aspiring data scientist with a background in electrical and computer engineering. Also a TEDx curator, a runner, a traveler and tech enthusiast.
   email     : andrecnf@gmail.com
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
@@ -63,8 +63,8 @@ repository_tree: master
 ## => Paths
 ##############################
 paths:
-  root    : # title link url, "/" (default)
-  home    : # home layout url, "/" (default)
+  root    : /homepage.html # title link url, "/" (default)
+  home    : /homepage.html # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
