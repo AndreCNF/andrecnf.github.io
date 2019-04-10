@@ -1,6 +1,6 @@
 ---
 layout: article
-title: TEDx Curator 101
+title: TEDx Curation 101
 tags:
 - TEDx
 - Public Speaking
