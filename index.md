@@ -3,7 +3,7 @@ layout: landing
 title: André Ferreira
 excerpt: >
   Aspiring data scientist, TEDx curator, tech enthusiast.
-permalink: /homepage.html
+permalink: /index.html
 
 article_header:
   actions:
