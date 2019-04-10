@@ -224,3 +224,6 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+
+# Make future posts visible on the site
+future: true
