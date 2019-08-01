@@ -48,7 +48,7 @@ Fortunately, research has been growing on perturbation-based methods, a family o
 
 ### What are they?
 
-Shapley values are a concept from game theory, first introduced by Lloyd Shapley in 1953 (I know that I said “modern”, but bear with me here), which defined **a way to calculate each player’s contribution in a cooperative game**. It all comes down to a single equation. Consider a total of *N* players, *i* the player whose contribution we’re calculating, **φi player *i*’s contribution**, *S* a subset of players excluding *i* (with *|S|* meaning the number of players in subset *S*) and *v* the function that outputs the total payoff for the set of input players. To calculate player *i*’s contribution, we calculate the following equation:
+Shapley values are a concept from game theory, first introduced by Lloyd Shapley in 1953 (I know that I said “modern”, but bear with me here), which defined **a way to calculate each player’s contribution in a cooperative game**. It all comes down to a single equation. Consider a total of *N* players, *i* the player whose contribution we’re calculating, ***φi* player *i*’s contribution**, *S* a subset of players excluding *i* (with *<code>&#124;</code>S<code>&#124;</code>* meaning the number of players in subset *S*) and *v* the function that outputs the total payoff for the set of input players. To calculate player *i*’s contribution, we calculate the following equation:
 
 ![Shapley values equation.](https://cdn-images-1.medium.com/max/7206/1*6qO9r24hApE6AMBkUrbtZw.png)
 
@@ -206,9 +206,9 @@ As I’ve mentioned, SHAP has multiple versions of an interpreter model, based o
 
 The squared loss is adequate here, as we want *g* to approximate *f* as best as possible. Regarding the weighting kernel, one way to see the validity of these parameters is that the weight is infinitely big when:
 
-* $|z’| = 0$, which forces $φ0 = f(Ø)$
+* *<code>&#124;</code>z’<code>&#124;</code> = 0*, which forces *φ0 = f(Ø)*
 
-* $|z’| = M$, which forces $∑φi [i = 0, …, M] = f(x)$
+* *<code>&#124;</code>z’<code>&#124;</code> = M*, which forces *∑φi [i = 0, …, M] = f(x)*
 
 Not only do these parameters provide an advantage over LIME, by guaranteeing compliance with the three desirable properties, but also the joint estimation of all SHAP values through linear regression gives better sample efficiency than classic Shapley equations.
 
