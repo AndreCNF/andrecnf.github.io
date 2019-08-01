@@ -13,7 +13,7 @@ article_header:
   background_color: '#203028'
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
-    src: assets/images/christopher-gower-291246-unsplash.jpg
+    src: assets/images/joao-silas-UGQoo2nznz8-unsplash.jpg
 key: post-RNN-interpretability
 comment: true
 cover: assets/images/joao-silas-UGQoo2nznz8-unsplash.jpg
@@ -36,7 +36,8 @@ In this article, we’ll explore a state-of-the-art method of machine learning i
 
 It’s not just hype anymore, machine learning is becoming an important part of our lives. Sure, there aren’t any sentient machines nor Scarlett Johansson ear lovers (shoutout to [Her](https://www.imdb.com/title/tt1798709/)) out there, but the evolution of these algorithms is undeniable. They can ride cars, assist in medical prognosis, predict stock, play videogames at a pro level and even generate melodies or images! But these machine learning models aren’t flawless nor foolproof. They can even be misleading, showing an incorrect probability in a sample that is very different from the training data (I recommend having a look at [Christian Perone’s presentation addressing uncertainty](http://blog.christianperone.com/2019/07/uncertainty-estimation-in-deep-learning-pydata-lisbon-july-2019/) [1]). Thus, especially in critical applications such as in diagnosing a patient or deciding a company’s strategy, it’s important to at least have some understanding of how the model got to its output value so that users can confirm if it’s trustable or not. Furthermore, in the case of a high-performance model coupled with an adequate interpretation, it can lead to surprising revelations, such as the impact of a gene in the diagnosis of a disease or a certain time of the year on sales.
 
-![We are not quite there yet in AI. GIF by the awesome [Simone Giertz](https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ).](https://cdn-images-1.medium.com/max/2000/1*d5X5qSwNxkEkYLfi6adxDw.gif)*We are not quite there yet in AI. GIF by the awesome [Simone Giertz](https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ).*
+![We are not quite there yet in AI. GIF by the awesome [Simone Giertz](https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ).](https://cdn-images-1.medium.com/max/2000/1*d5X5qSwNxkEkYLfi6adxDw.gif)
+*We are not quite there yet in AI. GIF by the awesome [Simone Giertz](https://www.youtube.com/channel/UC3KEoMzNz8eYnwBC34RaKCQ).*
 
 So it’s a no-brainer to apply interpretability techniques on all that is machine learning, right? Well, more or less. While simpler models like linear regression and decision trees are straightforward to analyze, more complex models such as a neural network aren’t self-explanatory, particularly in scenarios of high dimensionality of data and parameters. Some architecture changes have been suggested to make neural networks easier to interpret, such as attention weights. However, not only do these approaches require increasing the number of parameters and altering the model’s behavior (which could worsen its performance), they may not give us the full picture (attention weights only indicate the relative importance of each feature, not if it impacted the output positively or negatively). As such, there has been this tradeoff between performance and interpretability, where in order to be able to interpret the model, it would have to be simple enough or specially adapted in some way, restricting its potential.
 
@@ -46,7 +47,7 @@ Fortunately, research has been growing on perturbation-based methods, a family o
 
 ### What are they?
 
-Shapley values are a concept from game theory, first introduced by Lloyd Shapley in 1953 (I know that I said “modern”, but bear with me here), which defined **a way to calculate each player’s contribution in a cooperative game**. It all comes down to a single equation. Consider a total of *N* players, *i* the player whose contribution we’re calculating, ***φi* player *i*’s contribution**, *S* a subset of players excluding *i* (with *|S|* meaning the number of players in subset *S*) and *v* the function that outputs the total payoff for the set of input players. To calculate player *i*’s contribution, we calculate the following equation:
+Shapley values are a concept from game theory, first introduced by Lloyd Shapley in 1953 (I know that I said “modern”, but bear with me here), which defined **a way to calculate each player’s contribution in a cooperative game**. It all comes down to a single equation. Consider a total of *N* players, *i* the player whose contribution we’re calculating, **φi* player *i*’s contribution**, *S* a subset of players excluding *i* (with *|S|* meaning the number of players in subset *S*) and *v* the function that outputs the total payoff for the set of input players. To calculate player *i*’s contribution, we calculate the following equation:
 
 ![Shapley values equation.](https://cdn-images-1.medium.com/max/7206/1*6qO9r24hApE6AMBkUrbtZw.png)*Shapley values equation.*
 
