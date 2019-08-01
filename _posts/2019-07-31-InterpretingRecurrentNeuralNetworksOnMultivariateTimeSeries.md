@@ -14,7 +14,7 @@ article_header:
   background_image:
     gradient: 'linear-gradient(135deg, rgba(34, 139, 87 , .4), rgba(139, 34, 139, .4))'
     src: assets/images/christopher-gower-291246-unsplash.jpg
-key: post-TEDx-Curator-101
+key: post-RNN-interpretability
 comment: true
 cover: assets/images/joao-silas-UGQoo2nznz8-unsplash.jpg
 show_edit_on_github: false
