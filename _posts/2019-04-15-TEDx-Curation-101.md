@@ -20,6 +20,7 @@ key: post-TEDx-Curator-101
 comment: true
 cover: assets/images/TEDxISTAlameda2016.jpg
 show_edit_on_github: false
+visible: false
 ---
 
 A basic guide on how to be a curator of a TEDx event.
