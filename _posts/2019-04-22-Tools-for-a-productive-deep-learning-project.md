@@ -18,7 +18,7 @@ key: post-TEDx-Curator-101
 comment: true
 cover: assets/images/christopher-gower-291246-unsplash.jpg
 show_edit_on_github: false
-visible: false
+published: false
 ---
 
 Software to work smoothly on your neural networks.
